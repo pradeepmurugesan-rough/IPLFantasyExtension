@@ -1,0 +1,17 @@
+{
+  "name": "Fantasy Team Link",
+  "description": "open Teams in new page",
+  "version": "2.0",
+  "permissions": [
+          "tabs"
+        ],
+  "content_scripts": [
+   {
+      "matches": ["https://fantasy.iplt20.com/ifl/leagues/view/*"],
+      "js": ["lib/jquery-2.0.3.min.js", "newTab.js"],
+	  "css": ["css/newTabstyle.css"]
+    }
+  ],
+  "manifest_version": 2,
+  "web_accessible_resources": ["images/newTabIcon.png", "images/insert_link.png"]
+}
